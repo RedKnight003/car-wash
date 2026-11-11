@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IBN AL EMIARAT CARS SERVICES | Car Wash in Umm Al Quwain</title>
+    <meta
+      name="description"
+      content="Exterior wash, interior cleaning, full wash and polish in Umm Al Quwain. Walk in or book on WhatsApp."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <h1 class="logo">IBN AL EMIARAT CARS SERVICES</h1>
+
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        ≡
+      </button>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#calculator">Prices</a>
+        <a href="tel:+971562625216" class="btn">Call Now</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <span class="open-badge" id="open-badge" role="status"></span>
+      <h2>Your car, Spotless Again</h2>
+      <p>
+        Fast, careful car wash in Umm Al Quwain. Walk in or book on WhatsApp.
+      </p>
+      <a
+        href="https://wa.me/971562625216?text=Hello%2C%20I%20want%20to%20book%20a%20car%20wash"
+        class="btn-whatsapp"
+        >Book on WhatsApp</a
+      >
+    </section>
+
+    <section class="services" id="services">
+      <h2>Our Services</h2>
+      <div class="price-grid">
+        <div class="price-card">
+          <h3>Exterior Wash</h3>
+          <p class="price">From AED 25</p>
+          <p>Hand wash, rinse and dry</p>
+        </div>
+        <div class="price-card">
+          <h3>Engine Wash</h3>
+          <p class="price">From AED 5</p>
+          <p>Hand wash and clean outside the engine with pressured air.</p>
+        </div>
+        <div class="price-card">
+          <h3>Interior Cleaning</h3>
+          <p class="price">From AED 40</p>
+          <p>Vacuum, dashboard and seats.</p>
+        </div>
+        <div class="price-card">
+          <h3>Full Wash</h3>
+          <p class="price">From AED 60</p>
+          <p>Inside and outside together.</p>
+        </div>
+        <div class="price-card">
+          <h3>Polish &amp; wax</h3>
+          <p class="price">From AED 120</p>
+          <p>Shine and paint protection</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="calculator" id="calculator">
+      <h2>Price Calculator</h2>
+      <p>Choose your car size and service to see the price.</p>
+
+      <div class="calc-box">
+        <label for="car-size">Car size</label>
+        <select id="car-size">
+          <option value="1">Sedan / Hatchback</option>
+          <option value="1.3">SUV</option>
+          <option value="1.6">Large SUV /pickup</option>
+          <option value="2">Van/Minibus</option>
+        </select>
+        <label for="service">Service</label>
+        <select id="service">
+          <option value="5">Engine Wash</option>
+          <option value="25">Exterior Wash</option>
+          <option value="40">Interior Cleaning</option>
+          <option value="60">Full Wash</option>
+          <option value="120">Polish &amp; Wax</option>
+        </select>
+
+        <p class="total">Total: <span id="total">AED 25</span></p>
+        <a id="calc-whatsapp" class="btn-whatsapp" href="#">Book this on WhatsApp</a>
+      </div>
+    </section>
+
+    <section class="booking" id="booking">
+      <h2>Book a wash</h2>
+      <p>Fill in your details and we receive them on WhatsApp.</p>
+
+      <form id="booking-form" class="booking-form" novalidate>
+        <label for="name">Your name</label>
+        <input type="text" id="name" autocomplete="name" />
+        <p class="error" id="name-error"></p>
+
+        <label for="car">Car (make, model, color)</label>
+        <input type="text" id="car" placeholder="e.g. White Toyota Camry" />
+        <p class="error" id="car-error"></p>
+
+        <label for="book-service">Service</label>
+        <select id="book-service">
+          <option>Exterior Wash</option>
+          <option>Interior Cleaning</option>
+          <option>Full Wash</option>
+          <option>Polish &amp; Wax</option>
+        </select>
+
+        <label for="date">Date</label>
+        <input type="date" id="date" />
+        <p class="error" id="date-error"></p>
+
+        <label for="time">Time (8 AM to 8 PM)</label>
+        <input type="time" id="time" />
+        <p class="error" id="time-error"></p>
+
+        <button type="submit" class="btn-whatsapp">Send on WhatsApp</button>
+        <p class="status" id="form-status" role="status"></p>
+      </form>
+    </section>
+    <section class="faq" id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button
+            class="faq-question"
+            aria-expanded="false"
+            aria-controls="faq-1"
+          >
+            How long does a full wash take?
+          </button>
+          <div class="faq-answer" id="faq-1" hidden>
+            <p>The time depends on the car size and service, Message us on WhatsApp and we will tell you.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button
+            class="faq-question"
+            aria-expanded="false"
+            aria-controls="faq-2"
+          >
+            Do I need to book?
+          </button>
+          <div class="faq-answer" id="faq-2" hidden>
+            <p>
+              No, you can walk in. Booking on WhatsApp saves you waiting time.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button
+            class="faq-question"
+            aria-expanded="false"
+            aria-controls="faq-4"
+          >
+            Which payment methods do you accept?
+          </button>
+          <div class="faq-answer" id="faq-4" hidden>
+            <p>Cash and Card.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Visit Us</h2>
+      <p>Walk in, call, or message us on WhatsApp.</p>
+
+      <div class="contact-buttons">
+        <a href="tel:+971562625216" class="btn">Call Now</a>
+        <a
+          href="https://wa.me/971562625216?text=Hello%2C%20I%20want%20to%20book%20a%20car%20wash"
+          class="btn-whatsapp"
+          >WhatsApp Us</a>
+      </div>
+
+      <div class="contact-info">
+        <div>
+          <h3>Location</h3>
+          <p>AL RAMLAH-2, Umm Al Quwain</p>
+        </div>
+        <div>
+          <h3>Opening Hours</h3>
+          <p>Every day 8 AM - 8 PM</p>
+        </div>
+        <div>
+          <h3>Phone</h3>
+          <p>+971 56 262 5216</p>
+        </div>
+      </div>
+
+       <div class="map">
+        <iframe title="Car wash location in Umm Al Quwain on Google Maps" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d744.356915191641!2d55.582021033622006!3d25.503500094778154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDMwJzEzLjQiTiA1NcKwMzQnNTYuNyJF!5e1!3m2!1sen!2sae!4v1794276355983!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+       </div>
+    </section>
+    <footer class="footer">
+      <p>&copy; 2026 IBN AL EMIARAT CARS SERVICES. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
